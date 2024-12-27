@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+#contact form label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#contact form input,
+#contact form textarea {
+    font-family: 'Roboto', sans-serif;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #1717e6;
+    margin-top: 2rem;
+    border-top: 2px solid #11e446;
+}
+
+#contact h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #555;
+}
+/* Portfolio Section */
+#portfolio {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #ce1d1d;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.portfolio-item {
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: #0ee467;
+    margin: 1rem 0 0.5rem;
+}
+
+.portfolio-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #db1c1c;
+    padding: 0 1rem 1rem;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(75, 11, 134, 0.2);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust header text size */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Stack portfolio items vertically */
+    .portfolio-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* Reduce padding for smaller screens */
+    section {
+        padding: 1rem;
+    }
+
+    /* Make images responsive */
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust portfolio item text size */
+    .portfolio-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .portfolio-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller font sizes for very small screens */
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    header nav a {
+        font-size: 0.9rem;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Back-to-Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #555;
+}
+/* Top-right image styles */
+.top-right-img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 60px; /* Adjust width as needed */
+    height: 60px; /* Adjust height as needed */
+    border-radius: 50%; /* Makes it a circle */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
+}
